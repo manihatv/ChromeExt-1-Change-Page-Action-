@@ -1,0 +1,19 @@
+{
+	"name":"Hello All",
+	"version": "1",
+	"description": "This is the description message",
+	"manifest_version": 2,
+	"icons":{"48": "48.png","128": "128.png"},
+	"browser_action":{
+		"default_icon": "19.png",
+		"default_title": "Click for the popup message"
+	},
+	"content_scripts": [ {
+    "matches": ["<all_urls>"],
+    "js": ["jquery.js","content.js"]
+	} ],
+	"permissions": [
+      "tabs", "http://*/*", "https://*/*", "storage"
+    ]
+	
+}
